@@ -1,0 +1,108 @@
+:root {
+  --primary-color: #0056b3;
+  --primary-color-hover: #003f7f;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: white;
+}
+
+.nav-item a.nav-link:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border: 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-text {
+  color: #333;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 0;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.sidebar {
+  background-color: #f8f9fa !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a:hover {
+  text-decoration: underline !important;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: 0;
+  padding: 0;
+  display: none;
+  border-radius: 5px;
+}
+
+.contact-form .form-control{
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #FFF;
+  background-color: transparent;
+  color: #FFF;
+}
+
+.contact-form .form-control::placeholder {
+  color: #FFF;
+}
+
+.contact-form .form-control:focus {
+  outline: none;
+}
+
+
+
